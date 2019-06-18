@@ -1,0 +1,15 @@
+{
+  "name": "apptest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "fetch": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server -c-1 -p 3333"
+  },
+  "author": "El Gourchal Rajaa",
+  "license": "ISC"
+}
