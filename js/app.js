@@ -113,7 +113,7 @@ const setFirstdataaa= async (x) =>{
 const triparnom =  () => {
     
     tabtri=  t.sort(tri);
-    afficher(tabtri);
+     afficher(tabtri);
     //l'id de la methode tri par nom =1
     idmethode=1;
 
@@ -123,7 +123,7 @@ const triparnom =  () => {
 const triparheight = () => {
    
    tabtri=  t.sort(trinum);
-    afficher(tabtri);
+     afficher(tabtri);
     //l'id de la methode tri par Height=2
     idmethode=2;
 
@@ -131,27 +131,14 @@ const triparheight = () => {
 //methode pour afficher les personnes qui ont skin.color="fair"
 const recherche =  () => {
     idmethode=3;
-       var output='';
+       let dataFair = [];
        for(var i =0;i<t.length;i++){
         if(t[i].skin_color=="fair"){
-            output += `
-            <tr>
-            <td> ${t[i].name}</td>
-            <td> ${t[i].height}</td>
-            <td> ${t[i].mass}</td>
-            <td> ${t[i].hair_color}</td>
-            <td> ${t[i].skin_color}</td>
-            <td> ${t[i].eye_color}</td>
-            <td> ${t[i].birth_year}</td>
-            </tr>	
-        `;
+            dataFair.push(t[i]);
+             afficher(dataFair);
        }
-      
        }
-       //on affecte la valeur 3 a l'id de la methode recherche
-      
-    document.getElementById("nom").innerHTML =output;
-   
+        
    }
 
 //methode pour pagination next

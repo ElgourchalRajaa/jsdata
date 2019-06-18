@@ -30,6 +30,8 @@ table {
     background-color: #f1f1f1;
     color: black;
   }
+
+
   
   button{
     background-color: black;
@@ -44,14 +46,24 @@ table {
   }
   .button1 {
     font-size:0.875em;
-    display:block;
+    display:inline-block;
     left:-60px;
     margin-top:35px;
-    width:100%;
+    width:300px;
   }
   .button1:hover {
     background-color: #090088;
     color: white;
+  }
+
+  @media screen and (max-width: 640px) {
+    .button1 {
+        font-size:0.875em;
+        display:block;
+        left:-60px;
+        margin-top:35px;
+        width:100%;
+      }
   }
    
 @media 
